@@ -66,7 +66,12 @@ const App = () => {
           </h1>
           <img src={createPostImg} className='w-3/4' />
         </div>
-        <div>Write your content using AI.</div>
+        <div className='bg-secondary rounded-md py-6 pl-6'>
+          <h1 className='font-regular font-bold text-2xl text-pretty leading-5 mb-6'>
+            Write your content using AI.
+          </h1>
+          <img src={writeContentImg} className='w-3/4' />
+        </div>
       </div>
     </div>
   );
