@@ -9,8 +9,8 @@ import createPostImg from '../src/assets/images/illustration-create-post.webp';
 
 const App = () => {
   return (
-    <div className='py-8 px-6 flex justify-center items-center bg-[#f6f6f6]'>
-      <div className=' grid grid-cols-1 grid-rows-1 gap-7 md:grid-cols-4 md:grid-rows-4  '>
+    <div className='flex justify-center items-center bg-[#f6f6f6] lg:h-dvh'>
+      <div className=' py-8 px-6  grid grid-cols-1 grid-rows-1 gap-7 md:grid-cols-4 md:grid-rows-4 md:h-full lg:px-40 lg:py-20 md:overflow-hidden'>
         <div className='bg-primary p-8 rounded-md flex flex-col justify-center items-center text-center md:col-span-2 md:row-span-2 md:col-start-2 md:row-start-1'>
           <h1 className='text-white font-md text-4xl mb-6'>
             Social Media <span className='text-secondary '>10x&nbsp;</span>
@@ -22,20 +22,23 @@ const App = () => {
             Over 4,000 5-star reviews
           </span>
         </div>
-        <div className='bg-white py-2.5 px-4 rounded-md space-y-2 md:row-span-2 md:col-start-2 md:row-start-3'>
+
+        <div className='bg-white py-2.5 px-4 rounded-md space-y-2 md:col-start-2 md:row-start-3 ' >
           <img src={igImg} />
 
           <h1 className='font-regular text-pretty font-bold text-xl tracking-normal leading-[1.15rem]'>
             Manage multiple accounts and platforms.
           </h1>
         </div>
+
         <div className='relative px-2.5 pr-36 pt-3 bg-secondary rounded-md md:col-start-3 md:row-start-3'>
           <h1 className='font-regular font-bold tracking-tight leading-4 '>
             Maintain a consistent posting schedule.
           </h1>
           <img src={calenderImg} className='mt-3' />
         </div>
-        <div className='bg-primary-foreground py-4 px-3 text-center space-y-3 rounded-md md:row-span-3 md:col-start-4 md:row-start-1'>
+
+        <div className='bg-primary-foreground py-4 px-3 text-center space-y-3 rounded-md md:row-span-3 md:col-start-4 '>
           <h1 className='font-regular font-bold text-[1.4rem]'>
             Schedule to social media.
           </h1>
@@ -45,33 +48,38 @@ const App = () => {
             your audience.
           </p>
         </div>
-        <div className='bg-primary rounded-md px-12 py-6 flex flex-col items-center justify-center text-center md:col-span-2 md:col-start-3 md:row-start-4'>
+
+        <div className='bg-primary rounded-md px-12 py-6 flex flex-col items-center justify-center text-center md:col-span-2 md:col-start-4 md:row-start-4'>
           <img src={growFollowersImg} className='mb-8 w-4/5 self-start' />
           <p className='font-md text-white text-2xl text-pretty tracking-tighter leading-5 '>
             Grow followers
             <br className='block md:hidden' /> with non-stop content.
           </p>
         </div>
-        <div className='block bg-white py-4 px-3 text-left  rounded-md md:hidden '>
+
+        <div className='block bg-white py-4 px-3 text-left rounded-md md:col-start-2 md:row-start-4'>
           <h1 className='font-md tracking-tighter text-3xl'>{`>56%`}</h1>
           <p className='font-regular tracking-tight mb-3'>
             faster audience growth
           </p>
           <img src={fasterAudienceImg} className='min-w-20 w-1/2 ' />
         </div>
-        <div className='bg-secondary-foreground py-8 px-7 rounded-md flex flex-col md:row-span-2'>
+
+        <div className='bg-secondary-foreground py-8 px-7 rounded-md flex flex-col md:row-span-2 md:col-start-1 md:row-start-1'>
           <h1 className='font-regular font-semibold tracking-tighter leading-6 text-3xl mb-6 '>
             Create and schedule content{' '}
             <span className='text-primary opacity-80 italic'>quicker.</span>
           </h1>
           <img src={createPostImg} className='w-3/4' />
         </div>
+
         <div className='bg-secondary rounded-md py-6 pl-6 md:row-span-2 md:col-start-1 md:row-start-3'>
           <h1 className='font-regular font-bold text-2xl text-pretty leading-5 mb-6'>
             Write your content using AI.
           </h1>
           <img src={writeContentImg} className='w-3/4' />
         </div>
+
       </div>
     </div>
   );
