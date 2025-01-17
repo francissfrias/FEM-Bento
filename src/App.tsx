@@ -53,7 +53,8 @@ const App = () => {
         <div className='bg-primary rounded-md px-12 py-6 flex flex-col items-center justify-center text-center overflow-hidden lg:row-start-4 lg:col-start-3 lg:col-span-2 lg:flex-row lg:px-6'>
           <img
             src={growFollowersImg}
-            className='mb-8 w-4/5 self-start lg:w-[55%]  '
+            alt='grow followers image'
+            className='mb-8 w-4/5 self-start lg:w-[55%]'
           />
           <p className='font-md text-white text-2xl text-left tracking-tighter leading-5 lg:text-[2.2rem] lg:leading-8'>
             Grow followers
